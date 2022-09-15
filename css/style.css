@@ -1,0 +1,31 @@
+.one{
+    background-color: blue;
+    grid-area:one;
+}
+.tow{
+    background-color: yellow;
+    grid-area:tow;
+}
+.three{
+    background-color: green;
+    grid-area:three;
+}
+.four{
+    background-color: red;
+    grid-area:four;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "one three" "one four" "tow tow";
+    border: 1px solid black;
+}
+.container > *{
+    padding:20px;
+
+}
+.tow{
+    width:100%;
+    order:4;
+}
+
